@@ -4,15 +4,19 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-@import url('href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;600&display=swap');
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #2E312E;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+
 }
 
 a {
@@ -405,7 +409,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f5fa;
+  background-color: #F0F4F9;
 }
 
 .section-title {
@@ -497,9 +501,13 @@ section {
 @media (max-width: 991px) {
   .features .image {
     text-align: center;
+    align-self: center;
+   
   }
   .features .image img {
     max-width: 80%;
+    align-self: center;
+    height: 400px;
   }
 }
 @media (max-width: 667px) {
@@ -587,17 +595,38 @@ section {
   box-sizing: content-box;
   padding: 30px 30px 30px 60px;
   margin: 30px 10px 30px 50px;
-  min-height: 200px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+  min-height: 300px;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08); */
   position: relative;
-  background: #fff;
+  /* background: #ff0; */
+  background-position: center center;
+  background-size:90% 90%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
 }
+.testimonials .cto {
+  background-image:url("../../assets/img/testimonials/testimonials-bg-1.png") ;
+}
+.testimonials .developer {
+  background-image:url("../../assets/img/testimonials/testimonials-bg-2.png") ;
+}
+.testimonials .designer {
+  background-image:url("../../assets/img/testimonials/testimonials-bg-3.png") ;
+}
+.testimonials .ceo {
+  background-image:url("../../assets/img/testimonials/testimonials-bg-4.png") ;
+}
+
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 10px;
+  width: 136px;
+  /* border-radius: 10px;
   border: 6px solid #fff;
+  */
   position: absolute;
-  left: -45px;
+  left: -30px;
+  bottom: 50px
 }
 .testimonials .testimonial-item h3 {
   font-size: 18px;
@@ -606,9 +635,12 @@ section {
   color: #111;
 }
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
+  font-size: 16px;
+  color: #2E312E;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif; 
   margin: 0;
+  text-align: center;
 }
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: #e8ecf5;
@@ -626,8 +658,14 @@ section {
   top: 10px;
 }
 .testimonials .testimonial-item p {
-  font-style: italic;
+ /* font-style: italic; */
+ text-align: center;
   margin: 15px auto 15px auto;
+  font-family: "Work Sans", sans-serif; 
+  font-size: 16px;
+  font-weight: 400;
+
+
 }
 .testimonials .swiper-pagination {
   margin-top: 20px;
@@ -666,7 +704,7 @@ section {
   font-size: 46px;
   color: #2E312E;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 25px;
 }
 .pricing h4 span {
@@ -815,14 +853,15 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   padding: 20px 40px;
-  background: #f1f3f6;
+  background: #FAF9C1;
   color: #2E312E;
   text-align: center;
   border: 1px solid #fff;
+  border-radius: 22px;
 }
 .contact .info i {
   font-size: 48px;
-  color: #9fb2d8;
+  color: #2E312E;
   margin-bottom: 15px;
 }
 .contact .info h4 {
@@ -838,6 +877,9 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
+  padding: 20px;
+  background-color: #FAF9C1;
+  border-radius: 22px;
 }
 .contact .php-email-form .error-message {
   display: none;
